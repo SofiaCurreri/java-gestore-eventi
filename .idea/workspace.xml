@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="20eeadc7-45ce-4d9c-8549-225953a2edf3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="20eeadc7-45ce-4d9c-8549-225953a2edf3" name="Changes" comment="managing prenota() e disdici() in main class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/lessons/java/events/PrenotaDisdici.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/events/PrenotaDisdici.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +37,18 @@
       <option name="presentableId" value="Default" />
       <updated>1686647937647</updated>
     </task>
+    <task id="LOCAL-00001" summary="managing prenota() e disdici() in main class">
+      <created>1686648522827</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686648522827</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="managing prenota() e disdici() in main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="managing prenota() e disdici() in main class" />
   </component>
 </project>

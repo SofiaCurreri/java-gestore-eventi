@@ -6,18 +6,30 @@ import java.util.Scanner;
 public class PrenotaDisdici {
     public static void main(String[] args) {
         Scanner utente = new Scanner(System.in);
+        boolean errore;
+        Evento evento = null;
 
-        System.out.println("Inserisci titolo dell' evento");
-        String titolo = utente.nextLine();
+        //ciclo per continuare a inserire dati evento finché non sono tutti corretti
+        do{
+            errore = false;
+            //gestisco possibili eccezioni al momento della creazione dell' evento
+            try{
+                System.out.println("Inserisci titolo dell' evento");
+                String titolo = utente.nextLine();
 
-        System.out.println("Inserisci data dell' evento (yy/MM/dd)");
-        LocalDate data = LocalDate.parse(utente.nextLine());
+                System.out.println("Inserisci data dell' evento (yy-MM-dd)");
+                LocalDate data = LocalDate.parse(utente.nextLine());
 
-        System.out.println("Inserisci il numero totale di posti dell' evento");
-        int postiTot = utente.nextInt();
-        utente.nextLine();
+                System.out.println("Inserisci il numero totale di posti dell' evento");
+                int postiTot = utente.nextInt();
+                utente.nextLine();
 
-        Evento evento = new Evento(titolo, data, postiTot);
+                evento = new Evento(titolo, data, postiTot);
+            } catch (RuntimeException e){
+                System.out.println("Errore: " + e.getMessage());
+                errore = true;
+            }
+        }while (errore);
 
         boolean esci = false;
         boolean esci2 = false;
@@ -32,8 +44,13 @@ public class PrenotaDisdici {
                     int prenotazione = utente.nextInt();
                     utente.nextLine();
 
-                    for (int i = 0; i < prenotazione; i++) {
-                        evento.prenota();
+                    //gestisco possibili eccezioni legate al metodo prenota()
+                    try {
+                        for (int i = 0; i < prenotazione; i++) {
+                            evento.prenota();
+                        }
+                    } catch (RuntimeException e) {
+                        System.out.println("Errore: " + e.getMessage());
                     }
 
                     System.out.println("I posti prenotati totali sono: " + evento.getPostiPrenotati());
@@ -59,8 +76,13 @@ public class PrenotaDisdici {
                     int disdetta = utente.nextInt();
                     utente.nextLine();
 
-                    for (int i = 0; i < disdetta; i++) {
-                        evento.disdici();
+                    //gestisco possibili eccezioni legate al metodo disdici()
+                    try {
+                        for (int i = 0; i < disdetta; i++) {
+                            evento.disdici();
+                        }
+                    } catch (RuntimeException e) {
+                        System.out.println("Errore: " + e.getMessage());
                     }
 
                     System.out.println("I posti prenotati totali sono: " + evento.getPostiPrenotati());
