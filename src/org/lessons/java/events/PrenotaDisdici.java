@@ -38,9 +38,14 @@ public class PrenotaDisdici {
 
                     System.out.println("I posti prenotati totali sono: " + evento.getPostiPrenotati());
                     System.out.println("I posti disponibili sono: " + (evento.getPostiTot() - evento.getPostiPrenotati()));
+                    break;
                 case "n":
                     System.out.println("Arrivederci!");
                     esci = true;
+                    break;
+                default:
+                    System.out.println("Devi inserire una risposta che sia 's' o 'n'");
+                    break;
             }
         }while(!esci);
 
@@ -60,9 +65,14 @@ public class PrenotaDisdici {
 
                     System.out.println("I posti prenotati totali sono: " + evento.getPostiPrenotati());
                     System.out.println("I posti disponibili sono: " + (evento.getPostiTot() - evento.getPostiPrenotati()));
+                    break;
                 case "n":
                     System.out.println("Arrivederci!");
                     esci2 = true;
+                    break;
+                default:
+                    System.out.println("Devi inserire una risposta che sia 's' o 'n'");
+                    break;
             }
         }while(!esci2);
     }
