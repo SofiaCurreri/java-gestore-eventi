@@ -1,6 +1,7 @@
 package org.lessons.java.events;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Scanner;
 import java.time.LocalTime;
 
@@ -107,5 +108,8 @@ public class PrenotaDisdici {
         Concerto concerto = new Concerto("Shake The Snow Globe Tour", LocalDate.of(2023, 8, 21), 350, LocalTime.of(21, 30), "32.90");
         System.out.println(concerto.toString());
 
+
+        //************************************PROGRAMMA EVENTI**********************************
+//        ProgrammaEventi programma = new ProgrammaEventi("Summer Tour", List<Evento> eventi);
     }
 }
