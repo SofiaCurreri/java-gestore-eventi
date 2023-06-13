@@ -1,12 +1,13 @@
 package org.lessons.java.events;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Evento {
     //ATTRIBUTI
     private String titolo;
     private LocalDate data;
-    private int postiTot;
+    private final int postiTot;
     private int postiPrenotati;
 
     //COSTRUTTORE
@@ -59,5 +60,33 @@ public class Evento {
         } else {
             this.data = data;
         }
+    }
+
+    //METODI
+    public void prenota(){
+        if(getData().isBefore(LocalDate.now())) {
+            throw new RuntimeException("L' evento si è gia svolto, impossibile procedere con la prenotazione");
+        } else if ((getPostiTot() - getPostiPrenotati()) == 0) {
+            throw new RuntimeException("Non ci sono più posti disponibili");
+        } else {
+            postiPrenotati = getPostiPrenotati() + 1;
+        }
+    }
+
+    public void disdici(){
+        if(getData().isBefore(LocalDate.now())) {
+            throw new RuntimeException("L' evento si è gia svolto, impossibile procedere con la prenotazione");
+        } else if (getPostiPrenotati() == 0) {
+            throw new RuntimeException("Non ci sono ancora prenotazioni! Non c' è nulla da disdire");
+        } else {
+            postiPrenotati = getPostiPrenotati() - 1;
+        }
+    }
+
+    @Override
+    public String toString(){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyy");
+        String dataFormattata = getData().format(formatter);
+        return dataFormattata + "-" + getTitolo();
     }
 }
