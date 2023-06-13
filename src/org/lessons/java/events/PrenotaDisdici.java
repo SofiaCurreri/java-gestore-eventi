@@ -2,10 +2,13 @@ package org.lessons.java.events;
 
 import java.time.LocalDate;
 import java.util.Scanner;
+import java.time.LocalTime;
 
 public class PrenotaDisdici {
     public static void main(String[] args) {
         Scanner utente = new Scanner(System.in);
+
+        //*****************************EVENTO*************************************
         boolean errore;
         Evento evento = null;
 
@@ -99,5 +102,10 @@ public class PrenotaDisdici {
         }while(!esci2);
 
         System.out.println(evento.toString());
+
+        //*************************************CONCERTO***************************************+
+        Concerto concerto = new Concerto("Shake The Snow Globe Tour", LocalDate.of(2023, 8, 21), 350, LocalTime.of(21, 30), "32.90");
+        System.out.println(concerto.toString());
+
     }
 }
