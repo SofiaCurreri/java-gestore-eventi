@@ -97,5 +97,7 @@ public class PrenotaDisdici {
                     break;
             }
         }while(!esci2);
+
+        System.out.println(evento.toString());
     }
 }
