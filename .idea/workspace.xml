@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20eeadc7-45ce-4d9c-8549-225953a2edf3" name="Changes" comment="working on milestone 4(bonus)">
+    <list default="true" id="20eeadc7-45ce-4d9c-8549-225953a2edf3" name="Changes" comment="milestone 4(bonus)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/events/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/events/Evento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/events/PrenotaDisdici.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/events/PrenotaDisdici.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686670226783</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="milestone 4(bonus)">
+      <created>1686734908683</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686734908683</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -88,6 +95,7 @@
     <MESSAGE value="classe Concerto" />
     <MESSAGE value="Milestone 3 completed" />
     <MESSAGE value="working on milestone 4(bonus)" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on milestone 4(bonus)" />
+    <MESSAGE value="milestone 4(bonus)" />
+    <option name="LAST_COMMIT_MESSAGE" value="milestone 4(bonus)" />
   </component>
 </project>
