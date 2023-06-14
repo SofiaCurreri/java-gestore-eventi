@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20eeadc7-45ce-4d9c-8549-225953a2edf3" name="Changes" comment="classe Concerto">
+    <list default="true" id="20eeadc7-45ce-4d9c-8549-225953a2edf3" name="Changes" comment="working on milestone 4(bonus)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/events/Concerto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/events/Concerto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/events/PrenotaDisdici.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/events/PrenotaDisdici.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/events/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/events/Evento.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +28,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Boolean-Java/projects/java-gestore-eventi"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Boolean-Java/projects/java-gestore-eventi&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,13 +65,29 @@
       <option name="project" value="LOCAL" />
       <updated>1686654028163</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Milestone 3 completed">
+      <created>1686661043925</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686661043925</updated>
+    </task>
+    <task id="LOCAL-00005" summary="working on milestone 4(bonus)">
+      <created>1686670226782</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686670226783</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="managing prenota() e disdici() in main class" />
     <MESSAGE value="Milestone 2 completed" />
     <MESSAGE value="classe Concerto" />
-    <option name="LAST_COMMIT_MESSAGE" value="classe Concerto" />
+    <MESSAGE value="Milestone 3 completed" />
+    <MESSAGE value="working on milestone 4(bonus)" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on milestone 4(bonus)" />
   </component>
 </project>

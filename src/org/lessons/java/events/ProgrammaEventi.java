@@ -2,6 +2,7 @@ package org.lessons.java.events;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.time.LocalDate;
 
 public class ProgrammaEventi {
     private String titolo;
@@ -14,17 +15,19 @@ public class ProgrammaEventi {
     }
 
     //METODI
-    public void aggiungiEvento(List<Evento> evento){
-        eventi.add((Evento) evento);
+    public void aggiungiEvento(Evento evento){
+        eventi.add(evento);
     }
 
-//    public void eventiFiltratiPerData(LocalDate data){
-//        List<Evento> eventiPerData = new ArrayList<>();
-//        foreach (Evento e : eventi) {
-//            eventiPerData.add(e);
-//        }
-//        return eventiPerData;
-//    }
+    public List<Evento> eventiFiltratiPerData(LocalDate data){
+        List<Evento> eventiPerData = new ArrayList<>();
+        for (Evento e : eventi) {
+            if(e.getData().isEqual(data)){
+                eventiPerData.add(e);
+            }
+        }
+        return eventiPerData;
+    }
 
     public String getTitolo(){
         return this.titolo;

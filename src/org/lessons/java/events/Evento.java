@@ -14,7 +14,7 @@ public class Evento {
     public Evento(String titolo, LocalDate data, int postiTot) {
         this.titolo = titolo;
 
-        if(data.isBefore(LocalDate.now())){
+        if(data == null || data.isBefore(LocalDate.now())){
             throw new RuntimeException("L' evento si è gia svolto, mi dispiace!");
         } else {
             this.data = data;
